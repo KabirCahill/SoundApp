@@ -15,9 +15,11 @@ private var buttons:[String] = ["One", "Two", "Three", "Four"]
 
 class SoundsCollectionViewController: UICollectionViewController {
 
+    @IBOutlet var navBarItem: UINavigationItem!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //navBarItem.rightBarButtonItem = UIBarButtonItem(title: "New", style: .plain, target: self, action: #selector(openRecordViewController))
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -31,6 +33,16 @@ class SoundsCollectionViewController: UICollectionViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    //@IBAction func openRecordView(_ sender: Any) {
+     //   let controller = RecordViewController()
+       // show(controller, sender: sender)
+    //}
+    //@objc func openRecordViewController()
+    //{
+        //1. extend ViewController
+        //2. programatically show a new instance of custom VC
+    //}
 
     /*
     // MARK: - Navigation

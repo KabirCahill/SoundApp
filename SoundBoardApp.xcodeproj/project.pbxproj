@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA8C531B1FBEB6BC0003C691 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C531A1FBEB6BC0003C691 /* RecordViewController.swift */; };
 		DAE8097E1FBD48B700ECA731 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE8097D1FBD48B700ECA731 /* AppDelegate.swift */; };
 		DAE809831FBD48B700ECA731 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAE809811FBD48B700ECA731 /* Main.storyboard */; };
 		DAE809851FBD48B700ECA731 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAE809841FBD48B700ECA731 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA8C531A1FBEB6BC0003C691 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		DAE8097A1FBD48B700ECA731 /* SoundBoardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundBoardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE8097D1FBD48B700ECA731 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAE809821FBD48B700ECA731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				DAE809AB1FBD490800ECA731 /* SoundsCollectionViewController.swift */,
+				DA8C531A1FBEB6BC0003C691 /* RecordViewController.swift */,
 				DAE8097D1FBD48B700ECA731 /* AppDelegate.swift */,
 				DAE809AD1FBD4BB400ECA731 /* SoundsCollectionViewCell.swift */,
 				DAE809811FBD48B700ECA731 /* Main.storyboard */,
@@ -265,6 +268,7 @@
 				DAE809AE1FBD4BB400ECA731 /* SoundsCollectionViewCell.swift in Sources */,
 				DAE8097E1FBD48B700ECA731 /* AppDelegate.swift in Sources */,
 				DAE809AC1FBD490800ECA731 /* SoundsCollectionViewController.swift in Sources */,
+				DA8C531B1FBEB6BC0003C691 /* RecordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
