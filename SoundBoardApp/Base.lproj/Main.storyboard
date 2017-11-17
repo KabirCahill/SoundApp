@@ -100,28 +100,45 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ejq-xH-LDn"/>
                                 </constraints>
-                                <state key="normal" title="Start Recording"/>
+                                <state key="normal" title="Start Recording">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="record:" destination="2D3-PR-1vL" eventType="touchUpInside" id="OxJ-1z-KCj"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzx-SM-5pa">
-                                <rect key="frame" x="106" y="154" width="163" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzx-SM-5pa">
+                                <rect key="frame" x="106" y="154" width="163" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="47"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZxD-XR-S8k">
+                                <rect key="frame" x="60" y="428" width="255" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9x5-e1-Kz0"/>
+                                </constraints>
+                                <state key="normal" title="Play"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ZxD-XR-S8k" firstAttribute="leading" secondItem="Qbg-Hc-gyc" secondAttribute="leading" constant="60" id="0nC-Xd-yxd"/>
+                            <constraint firstItem="nzx-SM-5pa" firstAttribute="top" secondItem="Qbg-Hc-gyc" secondAttribute="top" constant="134" id="5Si-eo-3RF"/>
                             <constraint firstItem="RpJ-Hu-PuC" firstAttribute="leading" secondItem="Qbg-Hc-gyc" secondAttribute="leading" constant="60" id="I8q-bu-Dmw"/>
+                            <constraint firstItem="Qbg-Hc-gyc" firstAttribute="trailing" secondItem="ZxD-XR-S8k" secondAttribute="trailing" constant="60" id="L27-Vy-If9"/>
                             <constraint firstItem="Qbg-Hc-gyc" firstAttribute="trailing" secondItem="RpJ-Hu-PuC" secondAttribute="trailing" constant="60" id="LFO-QZ-mao"/>
+                            <constraint firstItem="ZxD-XR-S8k" firstAttribute="top" secondItem="RpJ-Hu-PuC" secondAttribute="bottom" constant="8" id="bUD-Mj-k3g"/>
                             <constraint firstItem="RpJ-Hu-PuC" firstAttribute="top" secondItem="Qbg-Hc-gyc" secondAttribute="top" constant="350" id="dZD-h2-PGg"/>
+                            <constraint firstItem="nzx-SM-5pa" firstAttribute="leading" secondItem="Qbg-Hc-gyc" secondAttribute="leading" constant="106" id="f5M-Qp-VEr"/>
+                            <constraint firstItem="Qbg-Hc-gyc" firstAttribute="trailing" secondItem="nzx-SM-5pa" secondAttribute="trailing" constant="106" id="fKn-Oe-gDr"/>
+                            <constraint firstItem="nzx-SM-5pa" firstAttribute="leading" secondItem="Qbg-Hc-gyc" secondAttribute="leading" constant="106" id="p5j-Ab-dFB"/>
+                            <constraint firstItem="Qbg-Hc-gyc" firstAttribute="trailing" secondItem="nzx-SM-5pa" secondAttribute="trailing" constant="106" id="qAj-iG-5z1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Qbg-Hc-gyc"/>
                     </view>
                     <connections>
+                        <outlet property="playButton" destination="ZxD-XR-S8k" id="XLA-dx-SLa"/>
                         <outlet property="recordButton" destination="RpJ-Hu-PuC" id="cUd-qs-fWY"/>
                         <outlet property="timeDisplay" destination="nzx-SM-5pa" id="sd3-tl-ReE"/>
                     </connections>
