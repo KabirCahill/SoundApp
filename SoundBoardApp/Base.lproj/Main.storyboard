@@ -119,6 +119,9 @@
                                     <constraint firstAttribute="height" constant="50" id="9x5-e1-Kz0"/>
                                 </constraints>
                                 <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playRecording:" destination="2D3-PR-1vL" eventType="touchUpInside" id="tg7-5T-x58"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
