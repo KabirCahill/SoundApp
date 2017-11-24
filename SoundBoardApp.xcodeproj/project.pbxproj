@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA5372441FC8AC1D0044841A /* EditAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5372431FC8AC1D0044841A /* EditAudioViewController.swift */; };
 		DA8C531B1FBEB6BC0003C691 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C531A1FBEB6BC0003C691 /* RecordViewController.swift */; };
 		DAE8097E1FBD48B700ECA731 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE8097D1FBD48B700ECA731 /* AppDelegate.swift */; };
 		DAE809831FBD48B700ECA731 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAE809811FBD48B700ECA731 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA5372431FC8AC1D0044841A /* EditAudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAudioViewController.swift; sourceTree = "<group>"; };
 		DA8C531A1FBEB6BC0003C691 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		DAE8097A1FBD48B700ECA731 /* SoundBoardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundBoardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE8097D1FBD48B700ECA731 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,10 +103,11 @@
 		DAE8097C1FBD48B700ECA731 /* SoundBoardApp */ = {
 			isa = PBXGroup;
 			children = (
-				DAE809AB1FBD490800ECA731 /* SoundsCollectionViewController.swift */,
 				DA8C531A1FBEB6BC0003C691 /* RecordViewController.swift */,
-				DAE8097D1FBD48B700ECA731 /* AppDelegate.swift */,
+				DA5372431FC8AC1D0044841A /* EditAudioViewController.swift */,
 				DAE809AD1FBD4BB400ECA731 /* SoundsCollectionViewCell.swift */,
+				DAE809AB1FBD490800ECA731 /* SoundsCollectionViewController.swift */,
+				DAE8097D1FBD48B700ECA731 /* AppDelegate.swift */,
 				DAE809811FBD48B700ECA731 /* Main.storyboard */,
 				DAE809841FBD48B700ECA731 /* Assets.xcassets */,
 				DAE809861FBD48B700ECA731 /* LaunchScreen.storyboard */,
@@ -268,6 +271,7 @@
 				DAE809AE1FBD4BB400ECA731 /* SoundsCollectionViewCell.swift in Sources */,
 				DAE8097E1FBD48B700ECA731 /* AppDelegate.swift in Sources */,
 				DAE809AC1FBD490800ECA731 /* SoundsCollectionViewController.swift in Sources */,
+				DA5372441FC8AC1D0044841A /* EditAudioViewController.swift in Sources */,
 				DA8C531B1FBEB6BC0003C691 /* RecordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

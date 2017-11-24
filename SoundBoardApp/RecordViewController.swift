@@ -57,8 +57,9 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPl
         //timeDisplay.text = ":00"
         isRecording = false
         
+        // play button
         playButton.layer.cornerRadius = 8
-        playButton.backgroundColor = UIColor.green
+        playButton.backgroundColor = UIColor(red: 0, green: 0.8, blue: 0.1, alpha: 1.0)
         playButton.setTitleColor(UIColor.white, for: .normal)
         playButton.isHidden = true
     }
@@ -126,10 +127,10 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPl
     }
     
     func recordButtonShowAsStart() {
-        recordButton.layer.borderColor = UIColor.blue.cgColor
+        recordButton.layer.borderColor = UIColor.black.cgColor
         recordButton.layer.borderWidth = 1
         recordButton.backgroundColor = UIColor.white
-        recordButton.setTitleColor(UIColor.blue, for: .normal)
+        recordButton.setTitleColor(UIColor.black, for: .normal)
         recordButton.setTitle("Start Recording", for: .normal)
     }
     
