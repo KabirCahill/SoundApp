@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA5372441FC8AC1D0044841A /* EditAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5372431FC8AC1D0044841A /* EditAudioViewController.swift */; };
 		DA8C531B1FBEB6BC0003C691 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C531A1FBEB6BC0003C691 /* RecordViewController.swift */; };
 		DAE8097E1FBD48B700ECA731 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE8097D1FBD48B700ECA731 /* AppDelegate.swift */; };
 		DAE809831FBD48B700ECA731 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAE809811FBD48B700ECA731 /* Main.storyboard */; };
@@ -37,7 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DA5372431FC8AC1D0044841A /* EditAudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAudioViewController.swift; sourceTree = "<group>"; };
 		DA8C531A1FBEB6BC0003C691 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		DAE8097A1FBD48B700ECA731 /* SoundBoardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundBoardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE8097D1FBD48B700ECA731 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				DA8C531A1FBEB6BC0003C691 /* RecordViewController.swift */,
-				DA5372431FC8AC1D0044841A /* EditAudioViewController.swift */,
 				DAE809AD1FBD4BB400ECA731 /* SoundsCollectionViewCell.swift */,
 				DAE809AB1FBD490800ECA731 /* SoundsCollectionViewController.swift */,
 				DAE8097D1FBD48B700ECA731 /* AppDelegate.swift */,
@@ -271,7 +268,6 @@
 				DAE809AE1FBD4BB400ECA731 /* SoundsCollectionViewCell.swift in Sources */,
 				DAE8097E1FBD48B700ECA731 /* AppDelegate.swift in Sources */,
 				DAE809AC1FBD490800ECA731 /* SoundsCollectionViewController.swift in Sources */,
-				DA5372441FC8AC1D0044841A /* EditAudioViewController.swift in Sources */,
 				DA8C531B1FBEB6BC0003C691 /* RecordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +434,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N6RP3H788Z;
 				INFOPLIST_FILE = SoundBoardApp/Info.plist;
@@ -445,6 +442,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.bcit.comp4977.SoundBoardApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -454,6 +452,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N6RP3H788Z;
 				INFOPLIST_FILE = SoundBoardApp/Info.plist;
@@ -461,6 +460,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.bcit.comp4977.SoundBoardApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

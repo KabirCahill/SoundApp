@@ -19,9 +19,11 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPl
     var audioPlayer: AVAudioPlayer!
     var settings = [String : Int]()
     
+    @IBOutlet var timeDisplay: UILabel!
     @IBOutlet var recordButton: UIButton!
     @IBOutlet var playButton: UIButton!
-    @IBOutlet var timeDisplay: UILabel!
+    @IBOutlet var nameTextField: UITextField!
+    @IBOutlet var saveButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,9 +54,9 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPl
             AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
         ]
 
+        // record button
         recordButton.layer.cornerRadius = 8
         recordButtonShowAsStart()
-        //timeDisplay.text = ":00"
         isRecording = false
         
         // play button
@@ -62,6 +64,16 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPl
         playButton.backgroundColor = UIColor(red: 0, green: 0.8, blue: 0.1, alpha: 1.0)
         playButton.setTitleColor(UIColor.white, for: .normal)
         playButton.isHidden = true
+        
+        // name text field
+        nameTextField.layer.borderWidth = 1
+        nameTextField.layer.cornerRadius = 8
+        nameTextField.layer.borderColor = UIColor.lightGray.cgColor
+        nameTextField.isHidden = true
+        nameTextField.placeholder = "Name of sound clip"
+        
+        // save button
+        saveButton.isHidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -79,7 +91,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPl
             timeDisplay.text = ":00"
             seconds = 0
             playButton.isHidden = true
-            
+            nameTextField.isHidden = true
         } else {
             isRecording = false
             finishRecording()
@@ -87,6 +99,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPl
             timer.invalidate()
             recordButton.setTitle("Record Again", for: .normal)
             playButton.isHidden = false
+            nameTextField.isHidden = false
         }
     }
     
@@ -147,6 +160,14 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPl
             self.audioPlayer.prepareToPlay()
             self.audioPlayer.delegate = self
             self.audioPlayer.play()
+        }
+    }
+    
+    @IBAction func onKeyStroke(_ sender: Any) {
+        if (nameTextField.text?.isEmpty)! {
+            saveButton.isHidden = true
+        } else {
+            saveButton.isHidden = false
         }
     }
     
