@@ -106,7 +106,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPl
             timer.invalidate()
             recordButton.setTitle("Record Again", for: .normal)
             playButton.isHidden = false
-            nameTextField.isHidden = false
+            //nameTextField.isHidden = false
         }
     }
     
