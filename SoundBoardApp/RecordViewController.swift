@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class RecordViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDelegate {
+class RecordViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDelegate, UITextFieldDelegate {
 
     var isRecording: Bool = false
     var seconds = 0
@@ -44,6 +44,8 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPl
         } catch {
             print("failed to record!")
         }
+        
+        nameTextField.delegate = self
         
         // Audio Settings
         
@@ -81,6 +83,11 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPl
         // Dispose of any resources that can be recreated.
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.nameTextField.resignFirstResponder()
+        return true
+    }
+    
     @IBAction func record(_ sender: Any) {
         if(!isRecording) {
             isRecording = true
@@ -106,8 +113,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPl
     func startRecording() {
         let audioSession = AVAudioSession.sharedInstance()
         do {
-            audioRecorder = try AVAudioRecorder(url: self.directoryURL()! as URL,
-                                                settings: settings)
+            audioRecorder = try AVAudioRecorder(url: self.directoryURL()! as URL, settings: settings)
             audioRecorder.delegate = self
             audioRecorder.prepareToRecord()
         } catch {
