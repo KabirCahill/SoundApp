@@ -20,6 +20,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPl
     var settings = [String : Int]()
     
     @IBOutlet var timeDisplay: UILabel!
+    @IBOutlet var hint: UILabel!
     @IBOutlet var recordButton: UIButton!
     @IBOutlet var playButton: UIButton!
     @IBOutlet var nameTextField: UITextField!
@@ -97,6 +98,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPl
             timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.updateTimeDisplay), userInfo: nil, repeats: true)
             timeDisplay.text = ":00"
             seconds = 0
+            hint.isHidden = true
             playButton.isHidden = true
             nameTextField.isHidden = true
         } else {
@@ -150,14 +152,14 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPl
         recordButton.layer.borderWidth = 1
         recordButton.backgroundColor = UIColor.white
         recordButton.setTitleColor(UIColor.black, for: .normal)
-        recordButton.setTitle("Start Recording", for: .normal)
+        recordButton.setTitle("Record", for: .normal)
     }
     
     func recordButtonShowAsStop() {
         recordButton.layer.borderWidth = 0
         recordButton.backgroundColor = UIColor.red
         recordButton.setTitleColor(UIColor.white, for: .normal)
-        recordButton.setTitle("Stop Recording", for: .normal)
+        recordButton.setTitle("Stop", for: .normal)
     }
     
     @IBAction func playRecording(_ sender: Any) {
